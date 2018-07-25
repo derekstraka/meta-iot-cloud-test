@@ -24,7 +24,7 @@ mkdir -p artifacts
 ./scripts/containerize.sh bitbake -k ${BUILD_TARGETS} || die "failed to build"
 
 for target in ${BUILD_TARGETS}; do
-    echo cp build/tmp/deploy/images/$MACHINE/${target}-${MACHINE}.* artifacts
+    zip artifacts/${target}-${MACHINE}.zip build/tmp/deploy/images/$MACHINE/${target}-${MACHINE}.*
 done
 
 exit 0
