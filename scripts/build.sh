@@ -21,6 +21,8 @@ rm -f build/conf/local.conf || die "failed to nuke local.conf"
 
 mkdir -p artifacts
 
+./scripts/containerize.sh "bitbake ${BUILD_TARGETS} -c checkpkg && cp tmp/log/checkpkg.csv ../artifacts/iot-cloud-packages-checkpkg.csv"
+
 ./scripts/containerize.sh bitbake -k ${BUILD_TARGETS} || die "failed to build"
 
 for target in ${BUILD_TARGETS}; do
