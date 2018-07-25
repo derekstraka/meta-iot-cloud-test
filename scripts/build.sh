@@ -7,6 +7,7 @@ export MACHINE="${MACHINE-qemux86-64}"
 BUILD_TARGETS="
     core-image-minimal-ibm \
     core-image-minimal-aws \
+    core-image-minimal-azure \
     core-image-minimal-google \
 "
 
