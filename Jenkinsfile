@@ -8,7 +8,7 @@ properties(
     ]
 )
 
-def targets = [ 'qemux86-64',  'qemuarm64' ]
+def targets = [ 'qemux86-64',  'qemuarm64', 'raspberrypi3-64', 'raspberrypi3', 'raspberrypi0-wifi' ]
 
 def machine_builds = [:]
 

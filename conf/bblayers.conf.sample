@@ -16,6 +16,7 @@ BBLAYERS ?= " \
   ##OEROOT##/meta-openembedded/meta-python \
   ##OEROOT##/meta-java \
   ##OEROOT##/meta-iot-cloud \
+  ##OEROOT##/meta-raspberrypi \
   "
 BBLAYERS_NON_REMOVABLE ?= " \
   ##OEROOT##/meta \
