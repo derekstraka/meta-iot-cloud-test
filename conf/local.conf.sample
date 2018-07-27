@@ -224,6 +224,8 @@ SSTATE_MIRRORS ?= "file://.* http://build-cache.asterius.io/master/sstate-cache/
 
 SOURCE_MIRROR_URL ?= "http://build-cache.asterius.io/downloads/"
 INHERIT += "own-mirrors rm_work distrodata"
+
+PREFERRED_RPROVIDER_java2-runtime="openjdk-8"
 #
 # Qemu configuration
 #
