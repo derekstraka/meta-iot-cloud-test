@@ -23,9 +23,9 @@ METARASPBERRYPI_URI="git://git.yoctoproject.org/meta-raspberrypi"
 METARASPBERRYPI_PATH="poky/meta-raspberrypi"
 METARASPBERRYPI_REV="${METARASPBERRYPI_REV-refs/remotes/origin/${branch}}"
 
-METAIOTCLOUD_URI="https://github.com/intel-iot-devkit/meta-iot-cloud.git"
+METAIOTCLOUD_URI="https://github.com/derekstraka/meta-iot-cloud.git"
 METAIOTCLOUD_PATH="poky/meta-iot-cloud"
-METAIOTCLOUD_REV="${METAIOTCLOUD_REV-refs/remotes/origin/${branch}}"
+METAIOTCLOUD_REV="${METAIOTCLOUD_REV-refs/remotes/origin/fix-rdepends}"
 
 METAJAVA_URI="git://git.yoctoproject.org/meta-java"
 METAJAVA_PATH="poky/meta-java"
